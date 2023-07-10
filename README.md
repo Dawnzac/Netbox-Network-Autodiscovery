@@ -1,9 +1,9 @@
 # Netbox-Network-Autodiscovery
 
 (Undergoing Development)
-IP address discovery and onboarding for Netbox.
+IP address Autodiscovery and onboarding for Netbox IPAM.
 
 Uses Nmap for scanning.
 Includes platform/version Identification.
 
-Frankenstiened from https://github.com/lopes/netbox-scanner/  Thanks @Lopes :)
+Frankensteined from https://github.com/lopes/netbox-scanner/  Thanks @lopes :)
