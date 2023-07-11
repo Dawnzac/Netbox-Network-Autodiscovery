@@ -4,7 +4,9 @@
 
 IP address Autodiscovery and onboarding for Netbox IPAM.
 
-Current functionality only includes processing output xml file from nmap.(DW: Updates are on the way)
+Current functionality only includes running subnet scan and processing output xml file from nmap into a csv file.  
+Upload the csv file to your netbox instance.
+(DW: Updates are on the way)
 
 #### Configure : 
 > network.txt
@@ -14,6 +16,7 @@ Includes platform/version Identification. (_**Note: Nmap done on windows will on
 #### Requirements:
   - Python
   - nmap
+  - numpy
 
 ##### How to Run :
   - run nmap-scan.sh
