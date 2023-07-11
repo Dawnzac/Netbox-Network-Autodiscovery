@@ -13,7 +13,8 @@ def run():
             continue
         abspath = os.path.join(self.path, f)
         tree = ET.parse(abspath)
-        #tree = ET.parse("10.80.30.0.xml")
+	#If auto detect doesnot work try passing file name straight here and run python3 nmap.py
+        #tree = ET.parse("10.10.10.0.xml")
         #root = tree.getroot()
             
         for host in root.findall('host'):
