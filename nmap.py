@@ -1,6 +1,7 @@
 import os
 import xml.etree.ElementTree as ET
 import logging
+import numpy as np
 
 
 hosts = list()
@@ -54,4 +55,6 @@ def run():
         
 if __name__== "__main__":
 	run();
-	print(*hosts, sep = "\n")
+	#uncomment below line to see results in cli
+	#print(*hosts, sep = "\n")
+	np.savetxt("uploadfile.csv", hosts, delimiter=", ", fmt ='% s')
