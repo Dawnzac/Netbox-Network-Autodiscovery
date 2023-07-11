@@ -11,17 +11,23 @@ def run():
     root = tree.getroot()
 
     for host in root.findall('host'):
+        #get mac address and vendor 
+        for address in host.iter('address'):
+             logging.debug('for loop inside address')
+             logging.debug({address.get('vendor')})
+             mac = address.get('addr')
+             ven = address.get('vendor')
         try:
             hosts.append((
                 host.find('address').attrib['addr'],
-                host.find('hostnames').find('hostname').attrib['name'],
+                host.find('hostnames').find('hostname').attrib['name'],mac,ven,
                 host.find('os').find('osmatch').find('osclass').attrib['osfamily'],
                 host.find('os').find('osmatch').attrib['name']))
         except AttributeError:
             try:
                 hosts.append((
                     host.find('address').attrib['addr'],
-                    unknown,
+                    ven,mac,ven,
                     host.find('os').find('osmatch').find('osclass').attrib['osfamily'],
                     host.find('os').find('osmatch').attrib['name']
                     ))
@@ -30,15 +36,14 @@ def run():
                     hosts.append((
                         host.find('address').attrib['addr'],
                         host.find('hostnames').find('hostname').attrib['name'],
-                        #host.find('address').attrib['vendor'],
+                        mac,ven,
                         unknown,
                         unknown
                         ))
                 except AttributeError:
                     hosts.append((
                         host.find('address').attrib['addr'],
-                        unknown,
-                        #host.find('address').attrib['vendor'],
+                        ven,mac,ven,
                         unknown,
                         unknown
                         ))
