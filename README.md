@@ -8,6 +8,13 @@ Current functionality only includes running subnet scan and processing output xm
 Upload the csv file to your netbox instance.
 (DW: Updates are on the way)
 
+```
+$ cd netbox-network-autodiscovery
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+```
+
 #### Configure : 
 > network.txt
 
