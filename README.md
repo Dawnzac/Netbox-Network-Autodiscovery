@@ -35,7 +35,7 @@ Includes platform/version Identification. (_**Note: Nmap done on Windows will on
 
 (_**Note: Make sure that you are running it inside the same folder/path**_)
 
-(_**If there are any issues with installation or working install netbox-scanner from the below repo and copy and replace these "__init__.py , nmap-scan.sh and nmap.py" files to main installation**_)
+(_**If there are any issues with installation or working. Install netbox-scanner from the below repo and copy and replace these "__init__.py , nmap-scan.sh and nmap.py" files to main installation**_)
 
 
 Frankensteined from https://github.com/lopes/netbox-scanner/  Thanks @lopes :)
