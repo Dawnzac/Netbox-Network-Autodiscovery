@@ -3,7 +3,6 @@ import requests
 
 from pynetbox import api
 
-
 class NetBoxScanner(object):
 
     def __init__(self, address, token, tls_verify, tag, cleanup):
@@ -62,11 +61,13 @@ class NetBoxScanner(object):
                 logging.info(f'unchanged: {host[0]}/32 "{host[1]}"')
                 self.stats['unchanged'] += 1
         else:
+            
             self.netbox.ipam.ip_addresses.create(
                 address=host[0],
                 tags=[{"name": self.tag}],
-                # dns_name=host[1],
-                description=host[1]
+                dns_name=host[1],
+                description=host[3],
+                comments=host[4] +"\t"+ host[5]
             )
             logging.info(f'created: {host[0]}/32 "{host[1]}"')
             self.stats['created'] += 1
