@@ -25,6 +25,7 @@ class Nmap(object):
                         ven = address.get('vendor')
                         if ven is None:
                         	ven = "Not-Found"
+                        #if hostname is not found , using vendor as hostname to identify easier
                         fven= ven.replace(' ','-').replace('(','').replace(')','').replace(',','-').replace('.','-')
                         
                     try:
