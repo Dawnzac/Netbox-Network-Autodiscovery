@@ -33,6 +33,12 @@ Includes platform/version Identification. (_**Note: Nmap done on Windows will on
 
 (_**Currently there appear to be some issues with Python code interaction in Windows so, get scan files from Windows and execute it on Linux**_)
 
+**Quick Tip!** :
+If you want to transfer files to another system running Linux, try copy via SCP
+
+``` scp -r /path/to/source user@ip:path/to/destination```  
+_remove -r if copying a single file_
+
 (_**Note: Make sure that you are running it inside the same folder/path**_)
 
 (_**If there are any issues with installation or working. Install netbox-scanner from the below repo and copy and replace these "__init__.py , nmap-scan.sh and nmap.py" files to main installation**_)
