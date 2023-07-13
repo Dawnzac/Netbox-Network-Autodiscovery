@@ -22,11 +22,16 @@ Includes platform/version Identification. (_**Note: Nmap done on windows will on
 
 #### Requirements:
   - Python
-  - nmap
-  - numpy
+  - Nmap
+  - NumPy
 
 ##### How to Run :
-  - run nmap-scan.sh
+  - run nmap-scan.sh (on Linux)
+  - run nmap-scan.bat (on Windows)
+      - Then copy the XML files into main folder in linux
+      - run python3 netbox-scanner.py nmap in linux
+
+(_**Currently there appear to be some issues with Python code interaction in Windows so, get scan files from Windows and execute it on Linux**_)
 
 (_**Note: Make sure that you are running it inside the same folder/path**_)
 
