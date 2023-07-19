@@ -1,0 +1,4 @@
+- Gonna have to do something to create devices and also somehow instantiate interface and connect those to the discovered IP addesses.instantiate
+- Automating the wiring with switches based on arp table and mac address discovered on ports.
+- In long term ,to fix the code to run on windows platforms.
+- Using API to build an android app that helps sys Admins to lookup and assign available IP's and also automate adding a new device making it easier for users.
