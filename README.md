@@ -5,8 +5,8 @@
 IP address Autodiscovery and onboarding for Netbox IPAM.
 
 ~Current functionality only includes running subnet scan and processing output XML files from Nmap into a CSV file.  
-Upload the CSV file to your netbox instance.~
-(DW: Updates are on the way)
+Upload the CSV file to your netbox instance.
+(DW: Updates are on the way)~
 
 ```
 $ cd netbox-network-autodiscovery
